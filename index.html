@@ -1,278 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forge & Field - Men's Gear</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="forge-field.css">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#home">
-            <i class="bi bi-compass me-2"></i>Forge & Field
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">
-                        <i class="bi bi-house me-1"></i> Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
-                        <i class="bi bi-shield-check me-1"></i> About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#products">
-                        <i class="bi bi-bag me-1"></i> Services
-                    </a>
-                </li>
-                <li class="nav-item me-lg-3">
-                    <a class="nav-link" href="#contact">
-                        <i class="bi bi-telephone me-1"></i> Contact
-                    </a>
-                </li>
-                <li class="nav-item mt-2 mt-lg-0">
-                    <button class="btn btn-olive rounded-pill px-4 fw-semibold"
-                        data-bs-toggle="modal" data-bs-target="#orderModal">
-                        <i class="bi bi-cart-check me-1"></i> Shop Now
-                    </button>
-                </li></ul></div></div></nav>
-<section id="home" class="hero-section text-light">
-    <div class="container py-5">
-        <div class="row align-items-center min-vh-75">
-            <div class="col-lg-7">
-                <span class="badge hero-badge rounded-pill px-3 py-2 mb-3">
-                    Built For The Everyday
-                </span>
-                <h1 class="display-3 fw-bold mb-3">
-                    Gear That Keeps Up With You
-                </h1>
-                <p class="lead mb-4">
-                    Tough everyday essentials, clean designs, and dependable gear
-                    made for workdays, weekends, and everything between.
-                </p>
-                <div class="d-grid gap-2 d-sm-flex">
-                    <button class="btn btn-olive btn-lg px-4 rounded-pill fw-semibold"
-                        data-bs-toggle="modal" data-bs-target="#orderModal">
-                        Explore Gear
-                    </button>
-                    <a href="#products" class="btn btn-outline-light btn-lg px-4 rounded-pill">
-                        View Collection
-                    </a></div></div></div></div></section>
-<div class="container my-4">
-    <div class="alert offer-alert rounded-4 shadow-sm d-flex align-items-center" role="alert">
-        <i class="bi bi-lightning-charge-fill me-3 fs-4"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="VELMORA fragrances — a presence that lingers."
+    />
+    <title>VELMORA — A Presence That Lingers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="vel_logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="announcement">
+      INTRODUCING VELMORA · FIND YOUR SIGNATURE SCENT
+    </div>
+
+    <header class="header">
+      <a class="brand" href="#home">
+        <img
+          class="brand-logo"
+          src="vel_logo.png"
+          alt="VELMORA Fragrances — inspired by Nepal"
+        />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <nav id="nav">
+        <a href="#collection">Collection</a>
+        <a href="#story">Our philosophy</a>
+        <a href="#notes">Find your scent</a>
+      </nav>
+
+      <button class="bag-button" id="openCart">
+        Bag <b id="count">0</b>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img
+          class="hero-image"
+          src="vel_main.png"
+          alt="VELMORA Fragrances — inspired by Nepal"
+        />
+      </section>
+
+      <section class="values">
+        <span>✳ Thoughtfully selected scents</span>
+        <span>◇ Understated design</span>
+        <span>✧ Made for everyday rituals</span>
+      </section>
+
+      <section class="section" id="collection">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE FIRST CHAPTER</p>
+            <h2>Meet your <em>signature.</em></h2>
+          </div>
+          <p>
+            Three distinct scent directions.<br />
+            One considered point of view.
+          </p>
+        </div>
+
+        <div class="products">
+          <article class="product">
+            <div class="product-art noir">
+              <span class="number">01 / 03</span>
+              <span class="tag">WARM & BOLD</span>
+              <img
+                class="product-image"
+                src="vel_noir.jpeg"
+                alt="VELMORA Noir perfume bottle"
+              />
+              <button class="add" data-add="noir">
+                Add to bag <span>＋</span>
+              </button>
+            </div>
+            <div class="product-row">
+              <div>
+                <h3>VELMORA NOIR</h3>
+                <p>Amber · Woods · Spice</p>
+              </div>
+              <b>NPR 1,499</b>
+            </div>
+            <p class="description">
+              A deeper, warmer profile for evenings that deserve to be remembered.
+            </p>
+          </article>
+
+          <article class="product">
+            <div class="product-art aura">
+              <span class="number">02 / 03</span>
+              <span class="tag">FRESH & EASY</span>
+              <img
+                class="product-image"
+                src="vel_aura.png"
+                alt="VELMORA Aura perfume bottle"
+              />
+              <button class="add" data-add="aura">
+                Add to bag <span>＋</span>
+              </button>
+            </div>
+            <div class="product-row">
+              <div>
+                <h3>VELMORA AURA</h3>
+                <p>Citrus · Fresh · Musk</p>
+              </div>
+              <b>NPR 1,299</b>
+            </div>
+            <p class="description">
+              Clean, bright and versatile — an effortless choice for everyday wear.
+            </p>
+          </article>
+
+          <article class="product">
+            <div class="product-art oud">
+              <span class="number">03 / 03</span>
+              <span class="tag">RICH & DISTINCTIVE</span>
+              <img
+                class="product-image"
+                src="vel_oud.png"
+                alt="VELMORA Oud perfume bottle"
+              />
+              <button class="add" data-add="oud">
+                Add to bag <span>＋</span>
+              </button>
+            </div>
+            <div class="product-row">
+              <div>
+                <h3>VELMORA OUD</h3>
+                <p>Oud · Woods · Amber</p>
+              </div>
+              <b>NPR 1,599</b>
+            </div>
+            <p class="description">
+              A smooth, opulent scent direction with a warm, distinctive character.
+            </p>
+          </article>
+        </div>
+
+        <p class="note">
+          Concept collection: scent profiles, imagery and prices are placeholders
+          until products and suppliers are confirmed.
+        </p>
+      </section>
+
+      <section class="manifesto" id="story">
+        <div class="big-v">V</div>
         <div>
-            <strong>Field Offer:</strong>
-            Get 15% OFF selected backpacks, watches, and everyday carry gear this week.</div></div></div>
-<section id="about" class="py-5 section-muted">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">About Forge & Field</h2>
-            <p class="section-subtitle">
-                Practical design, solid materials, and no unnecessary fuss.
-            </p></div>
-        <div class="row g-4 text-center">
-            <div class="col-12 col-md-4">
-                <div class="feature-card p-4 rounded-4 shadow-sm h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="bi bi-hammer"></i></div>
-                    <h4 class="fw-semibold">Built To Last</h4>
-                    <p class="text-muted mb-0">
-                        Reliable materials and sturdy construction for gear
-                        that handles everyday use.
-                    </p></div></div>
-            <div class="col-12 col-md-4">
-                <div class="feature-card p-4 rounded-4 shadow-sm h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="bi bi-bounding-box"></i></div>
-                    <h4 class="fw-semibold">Clean Utility</h4>
-                    <p class="text-muted mb-0">
-                        Minimal designs with useful details, smart storage,
-                        and comfortable everyday function.
-                    </p></div></div>
-            <div class="col-12 col-md-4">
-                <div class="feature-card p-4 rounded-4 shadow-sm h-100">
-                    <div class="feature-icon mb-3">
-                        <i class="bi bi-lightning"></i></div>
-                    <h4 class="fw-semibold">Ready For Action</h4>
-                    <p class="text-muted mb-0">
-                        From city commutes to weekend trails, our collection
-                        is made to move with you.
-                    </p></div></div></div></div></section>
-<section id="products" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Our Services</h2>
-            <p class="section-subtitle">
-                A few everyday essentials worth carrying.
-            </p></div>
-        <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card product-card h-100 border-0 shadow-sm rounded-4">
-                    <div class="product-icon">
-                        <i class="bi bi-backpack"></i></div>
-                    <div class="card-body p-4 text-center">
-                        <h5 class="card-title fw-bold">Trail Pack 24L</h5>
-                        <p class="card-text text-muted">
-                            A compact everyday backpack with padded storage,
-                            water-resistant fabric, and quick-access pockets.
-                        </p>
-                        <span class="badge price-badge mb-3 fs-6">NPR 4,800</span><br>
-                        <button class="btn btn-sm btn-olive rounded-pill px-3"
-                            data-bs-toggle="modal" data-bs-target="#orderModal">
-                            Add To Cart
-                        </button></div></div></div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card product-card h-100 border-0 shadow-sm rounded-4">
-                    <div class="product-icon">
-                        <i class="bi bi-smartwatch"></i></div>
-                    <div class="card-body p-4 text-center">
-                        <h5 class="card-title fw-bold">Field Watch</h5>
-                        <p class="card-text text-muted">
-                            A rugged everyday watch with a clean dial,
-                            comfortable strap, and classic outdoor character.
-                        </p>
-                        <span class="badge price-badge mb-3 fs-6">NPR 6,500</span><br>
-                        <button class="btn btn-sm btn-olive rounded-pill px-3"
-                            data-bs-toggle="modal" data-bs-target="#orderModal">
-                            Add To Cart
-                        </button></div></div></div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card product-card h-100 border-0 shadow-sm rounded-4">
-                    <div class="product-icon">
-                        <i class="bi bi-wallet2"></i></div>
-                    <div class="card-body p-4 text-center">
-                        <h5 class="card-title fw-bold">Utility Wallet</h5>
-                        <p class="card-text text-muted">
-                            A slim wallet built for cards, cash, and daily carry
-                            without adding unnecessary bulk.
-                        </p>
-                        <span class="badge price-badge mb-3 fs-6">NPR 1,800</span><br>
-                        <button class="btn btn-sm btn-olive rounded-pill px-3"
-                            data-bs-toggle="modal" data-bs-target="#orderModal">
-                            Add To Cart
-                        </button></div></div></div></div></div></section>
-<section id="reviews" class="py-5 section-muted">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Latest From The Field</h2>
-            <p class="section-subtitle">
-                Real feedback from people who carry the gear every day.
-            </p></div>
-        <div class="row g-4">
-            <div class="col-12 col-md-6">
-                <div class="card review-card border-0 shadow-sm rounded-4 p-3">
-                    <div class="card-body">
-                        <div class="text-warning mb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i></div>
-                        <p class="card-text text-muted">
-                            "The backpack feels seriously solid. It looks clean,
-                            fits everything I need, and has become my daily carry."
-                        </p>
-                        <h6 class="fw-bold mb-0">- Rohan K.</h6></div></div></div>
-            <div class="col-12 col-md-6">
-                <div class="card review-card border-0 shadow-sm rounded-4 p-3">
-                    <div class="card-body">
-                        <div class="text-warning mb-2">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i></div>
-                        <p class="card-text text-muted">
-                            "Really like the simple design. The watch looks good
-                            with casual clothes and feels tough enough for weekends."
-                        </p>
-                        <h6 class="fw-bold mb-0">- Aayush P.</h6></div></div></div></div></div></section>
-<div class="modal fade" id="orderModal" tabindex="-1"
-    aria-labelledby="orderModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-4">
-            <div class="modal-header border-0">
-                <h5 class="modal-title fw-bold" id="orderModalLabel">
-                    <i class="bi bi-bag-check me-2"></i>Reserve Your Gear
-                </h5>
-                <button type="button" class="btn-close"
-                    data-bs-dismiss="modal" aria-label="Close"></button></div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label small fw-semibold">Your Name</label>
-                        <input type="text" class="form-control"
-                            placeholder="e.g. Ashish B." required></div>
-                    <div class="mb-3">
-                        <label class="form-label small fw-semibold">Phone Number</label>
-                        <input type="tel" class="form-control"
-                            placeholder="98XXXXXXXX" required></div>
-                    <div class="mb-3">
-                        <label class="form-label small fw-semibold">Select Gear</label>
-                        <select class="form-select" required>
-                            <option selected disabled>Choose gear...</option>
-                            <option>Trail Pack 24L</option>
-                            <option>Field Watch</option>
-                            <option>Utility Wallet</option>
-                        </select></div>
-                    <div class="row">
-                        <div class="col-6 mb-3">
-                            <label class="form-label small fw-semibold">Date</label>
-                            <input type="date" class="form-control" required></div>
-                        <div class="col-6 mb-3">
-                            <label class="form-label small fw-semibold">Quantity</label>
-                            <input type="number" class="form-control"
-                                min="1" value="1" required></div></div>
-                    <button type="submit"
-                        class="btn btn-olive w-100 rounded-pill py-2 fw-semibold">
-                        Confirm Order
-                    </button></form></div></div></div></div>
-<footer id="contact" class="pt-5 pb-4">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-12 col-md-4">
-                <h5 class="fw-bold mb-3">
-                    <i class="bi bi-compass me-2"></i>Forge & Field
-                </h5>
-                <p class="small">
-                    Everyday gear for people who value useful design,
-                    dependable materials, and a little adventure.
-                </p></div>
-            <div class="col-6 col-md-4">
-                <h6 class="fw-bold mb-3">Quick Navigation</h6>
-                <ul class="list-unstyled small">
-                    <li class="mb-2"><a href="#home">Home</a></li>
-                    <li class="mb-2"><a href="#about">About</a></li>
-                    <li class="mb-2"><a href="#products">Services</a></li>
-                    <li class="mb-2"><a href="#contact">Contact</a></li></ul></div>
-            <div class="col-6 col-md-4">
-                <h6 class="fw-bold mb-3">Contact</h6>
-                <p class="small mb-2">
-                    <i class="bi bi-geo-alt me-2"></i>Bhaktapur, Nepal
-                </p>
-                <p class="small mb-3">
-                    <i class="bi bi-envelope me-2"></i>hello@forgeandfield.com
-                </p>
-                <div class="d-flex gap-3 fs-5">
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x"></i></a></div></div></div>
-        <hr class="my-4">
-        <div class="text-center small">
-            &copy; 2026 Forge & Field. All rights reserved. |
-            Web Technology Lab Assignment</div></div></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+          <p class="eyebrow">THE VELMORA PHILOSOPHY</p>
+          <h2>
+            Quiet confidence.<br />
+            <em>Lasting impression.</em>
+          </h2>
+          <p>
+            We believe a fragrance should feel personal, never ordinary. VELMORA
+            is being built around considered scent profiles, timeless design and
+            the little rituals that make a day your own.
+          </p>
+          <a class="light-link" href="#notes">Discover your scent ↗</a>
+        </div>
+        <small>A SCENT IS A STORY<br />WITHOUT WORDS.</small>
+      </section>
+
+      <section class="section notes" id="notes">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A WORLD OF NOTES</p>
+            <h2>What are you <em>drawn to?</em></h2>
+          </div>
+          <p>
+            Start with the feeling you want<br />
+            your fragrance to leave behind.
+          </p>
+        </div>
+
+        <div class="note-grid">
+          <button data-note="noir">
+            <span>◒</span>
+            <strong>Warm & mysterious</strong>
+            <small>Amber, woods, spice ↗</small>
+          </button>
+          <button data-note="aura">
+            <span>☼</span>
+            <strong>Fresh & effortless</strong>
+            <small>Citrus, clean musk ↗</small>
+          </button>
+          <button data-note="oud">
+            <span>✧</span>
+            <strong>Rich & distinctive</strong>
+            <small>Oud, warm woods ↗</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <p class="eyebrow">LET GOOD THINGS LINGER</p>
+        <h2>A note from <em>VELMORA.</em></h2>
+        <p>
+          Be first to hear about our launch, new scents and brand stories.
+        </p>
+
+        <form id="newsletter">
+          <input
+            type="email"
+            id="email"
+            placeholder="Your email address"
+            required
+          />
+          <button>Keep me posted ↗</button>
+        </form>
+        <small id="newsMessage"></small>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#home">
+        <img
+          class="brand-logo"
+          src="vel_logo.png"
+          alt="VELMORA Fragrances — inspired by Nepal"
+        />
+      </a>
+      <p>A presence that lingers.</p>
+      <div>
+        <a href="#collection">Collection</a>
+        <a href="#story">Our philosophy</a>
+        <a href="mailto:hello@velmora.example">Contact</a>
+      </div>
+      <small>© <span id="year"></span> VELMORA · Storefront prototype</small>
+    </footer>
+
+    <div class="shade" id="shade"></div>
+
+    <aside class="cart" id="cart">
+      <div class="cart-head">
+        <div>
+          <p class="eyebrow">YOUR SELECTION</p>
+          <h2>Your bag <small id="bagCount">(0)</small></h2>
+        </div>
+        <button id="closeCart" aria-label="Close cart">×</button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-bottom">
+        <div>
+          <span>Subtotal</span>
+          <strong id="subtotal">NPR 0</strong>
+        </div>
+        <p>Delivery fees, if any, are not included.</p>
+        <button class="gold-button" id="checkout">Continue to order ↗</button>
+        <small>Demo only — no payment is processed.</small>
+      </div>
+    </aside>
+
+    <dialog id="orderDialog">
+      <button class="dialog-close" id="closeDialog">×</button>
+      <p class="eyebrow">VELMORA ORDER ENQUIRY</p>
+      <h2>Almost <em>yours.</em></h2>
+      <p class="dialog-intro">
+        This demo creates a sample order summary only. It does not send an order
+        or process payment.
+      </p>
+
+      <form id="orderForm">
+        <label>
+          Full name
+          <input id="customerName" required placeholder="Your name" />
+        </label>
+        <label>
+          Phone number
+          <input
+            id="phone"
+            required
+            placeholder="98XXXXXXXX"
+            inputmode="tel"
+          />
+        </label>
+        <label>
+          Delivery address
+          <textarea
+            id="address"
+            required
+            rows="2"
+            placeholder="Your address in Nepal"
+          ></textarea>
+        </label>
+        <button class="gold-button">Create sample order ↗</button>
+      </form>
+
+      <p id="orderResult"></p>
+    </dialog>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
